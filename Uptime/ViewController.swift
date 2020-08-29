@@ -11,17 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var dayLabel: UILabel!
-    
     @IBOutlet weak var hourLabel: UILabel!
-    
     @IBOutlet weak var mainLabel: UILabel!
-    
     @IBOutlet weak var dayText: UILabel!
-    
     @IBOutlet weak var hourText: UILabel!
-    
     @IBOutlet weak var minuteLabel: UILabel!
-    
     @IBOutlet weak var minuteText: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var secondText: UILabel!
@@ -33,7 +27,7 @@ class ViewController: UIViewController {
         center()
         refreshWithTimer()
     }
-    
+        
     func refreshWithTimer() {
         refreshTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.refresh), userInfo: nil, repeats: true)
     }
