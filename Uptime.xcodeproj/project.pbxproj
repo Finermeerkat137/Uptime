@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101F451A24F898CB00753CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F451924F898CB00753CF4 /* AppDelegate.swift */; };
+		101F451C24F898CC00753CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F451B24F898CC00753CF4 /* SceneDelegate.swift */; };
+		101F451E24F898CC00753CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F451D24F898CC00753CF4 /* ViewController.swift */; };
+		101F452124F898CC00753CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101F451F24F898CC00753CF4 /* Main.storyboard */; };
+		101F452324F898F400753CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F452224F898F400753CF4 /* Assets.xcassets */; };
+		101F452624F898F400753CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101F452424F898F400753CF4 /* LaunchScreen.storyboard */; };
+		106B557624FA069400753CF4 /* UptimeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B557524FA069400753CF4 /* UptimeLibrary.m */; };
+		106B557724FA069400753CF4 /* UptimeLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 106B557424FA069400753CF4 /* UptimeLibrary.h */; };
+		106B557B24FA06C400753CF4 /* libUptimeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106B557224FA069400753CF4 /* libUptimeLibrary.a */; };
+		106B557C24FA06C400753CF4 /* libUptimeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106B557224FA069400753CF4 /* libUptimeLibrary.a */; };
+		1099C6D724F9C3CD00753CF4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099C6D624F9C3CD00753CF4 /* NotificationCenter.framework */; };
+		1099C6DA24F9C3CD00753CF4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099C6D924F9C3CD00753CF4 /* TodayViewController.swift */; };
+		1099C6DD24F9C3CD00753CF4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1099C6DB24F9C3CD00753CF4 /* MainInterface.storyboard */; };
+		1099C6E124F9C3CD00753CF4 /* Uptime Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1099C6D424F9C3CD00753CF4 /* Uptime Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1099C6DF24F9C3CD00753CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 101F450E24F898CB00753CF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1099C6D324F9C3CD00753CF4;
+			remoteInfo = "Uptime Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		106B557024FA069400753CF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				106B557724FA069400753CF4 /* UptimeLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1099C6E224F9C3CD00753CF4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1099C6E124F9C3CD00753CF4 /* Uptime Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1099C6F724F9C61800753CF4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		101F451624F898CB00753CF4 /* Uptime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uptime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101F451924F898CB00753CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		101F451B24F898CC00753CF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		101F451D24F898CC00753CF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		101F452024F898CC00753CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		101F452224F898F400753CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		101F452524F898F400753CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		101F452724F898F400753CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101F452D24F8993B00753CF4 /* Uptime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uptime-Bridging-Header.h"; sourceTree = "<group>"; };
+		106B556724FA054200753CF4 /* libUptimeLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUptimeLibrary.a; path = UptimeLibrary/libUptimeLibrary.a; sourceTree = "<group>"; };
+		106B557224FA069400753CF4 /* libUptimeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUptimeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		106B557424FA069400753CF4 /* UptimeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UptimeLibrary.h; sourceTree = "<group>"; };
+		106B557524FA069400753CF4 /* UptimeLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UptimeLibrary.m; sourceTree = "<group>"; };
+		1099C6D424F9C3CD00753CF4 /* Uptime Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Uptime Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1099C6D624F9C3CD00753CF4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1099C6D924F9C3CD00753CF4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		1099C6DC24F9C3CD00753CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1099C6DE24F9C3CD00753CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		101F451324F898CB00753CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106B557B24FA06C400753CF4 /* libUptimeLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106B556F24FA069400753CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1099C6D124F9C3CD00753CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1099C6D724F9C3CD00753CF4 /* NotificationCenter.framework in Frameworks */,
+				106B557C24FA06C400753CF4 /* libUptimeLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		101F450D24F898CB00753CF4 = {
+			isa = PBXGroup;
+			children = (
+				101F451824F898CB00753CF4 /* Uptime */,
+				1099C6D824F9C3CD00753CF4 /* Uptime Widget */,
+				106B557324FA069400753CF4 /* UptimeLibrary */,
+				1099C6D524F9C3CD00753CF4 /* Frameworks */,
+				101F451724F898CB00753CF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		101F451724F898CB00753CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				101F451624F898CB00753CF4 /* Uptime.app */,
+				1099C6D424F9C3CD00753CF4 /* Uptime Widget.appex */,
+				106B557224FA069400753CF4 /* libUptimeLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		101F451824F898CB00753CF4 /* Uptime */ = {
+			isa = PBXGroup;
+			children = (
+				101F451924F898CB00753CF4 /* AppDelegate.swift */,
+				101F451B24F898CC00753CF4 /* SceneDelegate.swift */,
+				101F451D24F898CC00753CF4 /* ViewController.swift */,
+				101F451F24F898CC00753CF4 /* Main.storyboard */,
+				101F452224F898F400753CF4 /* Assets.xcassets */,
+				101F452424F898F400753CF4 /* LaunchScreen.storyboard */,
+				101F452724F898F400753CF4 /* Info.plist */,
+				101F452D24F8993B00753CF4 /* Uptime-Bridging-Header.h */,
+			);
+			path = Uptime;
+			sourceTree = "<group>";
+		};
+		106B557324FA069400753CF4 /* UptimeLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				106B557424FA069400753CF4 /* UptimeLibrary.h */,
+				106B557524FA069400753CF4 /* UptimeLibrary.m */,
+			);
+			path = UptimeLibrary;
+			sourceTree = "<group>";
+		};
+		1099C6D524F9C3CD00753CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106B556724FA054200753CF4 /* libUptimeLibrary.a */,
+				1099C6D624F9C3CD00753CF4 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1099C6D824F9C3CD00753CF4 /* Uptime Widget */ = {
+			isa = PBXGroup;
+			children = (
+				1099C6D924F9C3CD00753CF4 /* TodayViewController.swift */,
+				1099C6DB24F9C3CD00753CF4 /* MainInterface.storyboard */,
+				1099C6DE24F9C3CD00753CF4 /* Info.plist */,
+			);
+			path = "Uptime Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		101F451524F898CB00753CF4 /* Uptime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 101F452A24F898F400753CF4 /* Build configuration list for PBXNativeTarget "Uptime" */;
+			buildPhases = (
+				101F451224F898CB00753CF4 /* Sources */,
+				101F451324F898CB00753CF4 /* Frameworks */,
+				101F451424F898CB00753CF4 /* Resources */,
+				1099C6E224F9C3CD00753CF4 /* Embed App Extensions */,
+				1099C6F724F9C61800753CF4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1099C6E024F9C3CD00753CF4 /* PBXTargetDependency */,
+			);
+			name = Uptime;
+			productName = Uptime;
+			productReference = 101F451624F898CB00753CF4 /* Uptime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		106B557124FA069400753CF4 /* UptimeLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106B557824FA069400753CF4 /* Build configuration list for PBXNativeTarget "UptimeLibrary" */;
+			buildPhases = (
+				106B556E24FA069400753CF4 /* Sources */,
+				106B556F24FA069400753CF4 /* Frameworks */,
+				106B557024FA069400753CF4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UptimeLibrary;
+			productName = UptimeLibrary;
+			productReference = 106B557224FA069400753CF4 /* libUptimeLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1099C6D324F9C3CD00753CF4 /* Uptime Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1099C6E524F9C3CD00753CF4 /* Build configuration list for PBXNativeTarget "Uptime Widget" */;
+			buildPhases = (
+				1099C6D024F9C3CD00753CF4 /* Sources */,
+				1099C6D124F9C3CD00753CF4 /* Frameworks */,
+				1099C6D224F9C3CD00753CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Uptime Widget";
+			productName = "Uptime Widget";
+			productReference = 1099C6D424F9C3CD00753CF4 /* Uptime Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		101F450E24F898CB00753CF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = nashi;
+				TargetAttributes = {
+					101F451524F898CB00753CF4 = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
+					106B557124FA069400753CF4 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					1099C6D324F9C3CD00753CF4 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 101F451124F898CB00753CF4 /* Build configuration list for PBXProject "Uptime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 101F450D24F898CB00753CF4;
+			productRefGroup = 101F451724F898CB00753CF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				101F451524F898CB00753CF4 /* Uptime */,
+				1099C6D324F9C3CD00753CF4 /* Uptime Widget */,
+				106B557124FA069400753CF4 /* UptimeLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		101F451424F898CB00753CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101F452624F898F400753CF4 /* LaunchScreen.storyboard in Resources */,
+				101F452324F898F400753CF4 /* Assets.xcassets in Resources */,
+				101F452124F898CC00753CF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1099C6D224F9C3CD00753CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1099C6DD24F9C3CD00753CF4 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		101F451224F898CB00753CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101F451E24F898CC00753CF4 /* ViewController.swift in Sources */,
+				101F451A24F898CB00753CF4 /* AppDelegate.swift in Sources */,
+				101F451C24F898CC00753CF4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		106B556E24FA069400753CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106B557624FA069400753CF4 /* UptimeLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1099C6D024F9C3CD00753CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1099C6DA24F9C3CD00753CF4 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1099C6E024F9C3CD00753CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1099C6D324F9C3CD00753CF4 /* Uptime Widget */;
+			targetProxy = 1099C6DF24F9C3CD00753CF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		101F451F24F898CC00753CF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101F452024F898CC00753CF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		101F452424F898F400753CF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101F452524F898F400753CF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1099C6DB24F9C3CD00753CF4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1099C6DC24F9C3CD00753CF4 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		101F452824F898F400753CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		101F452924F898F400753CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		101F452B24F898F400753CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Uptime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/UptimeLibrary";
+				PRODUCT_BUNDLE_IDENTIFIER = us.nashi.Uptime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Uptime/Uptime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		101F452C24F898F400753CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Uptime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/UptimeLibrary";
+				PRODUCT_BUNDLE_IDENTIFIER = us.nashi.Uptime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Uptime/Uptime-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		106B557924FA069400753CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		106B557A24FA069400753CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1099C6E324F9C3CD00753CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Uptime Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UptimeLibrary",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "us.nashi.Uptime.Uptime-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Uptime/Uptime-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1099C6E424F9C3CD00753CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Uptime Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UptimeLibrary",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "us.nashi.Uptime.Uptime-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Uptime/Uptime-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		101F451124F898CB00753CF4 /* Build configuration list for PBXProject "Uptime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101F452824F898F400753CF4 /* Debug */,
+				101F452924F898F400753CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		101F452A24F898F400753CF4 /* Build configuration list for PBXNativeTarget "Uptime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101F452B24F898F400753CF4 /* Debug */,
+				101F452C24F898F400753CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		106B557824FA069400753CF4 /* Build configuration list for PBXNativeTarget "UptimeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106B557924FA069400753CF4 /* Debug */,
+				106B557A24FA069400753CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1099C6E524F9C3CD00753CF4 /* Build configuration list for PBXNativeTarget "Uptime Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1099C6E324F9C3CD00753CF4 /* Debug */,
+				1099C6E424F9C3CD00753CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 101F450E24F898CB00753CF4 /* Project object */;
+}
