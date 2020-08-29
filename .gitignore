@@ -1,3 +1,5 @@
 DerivedData
 packages
 .theos
+Makefile
+.DS_Store

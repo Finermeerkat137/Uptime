@@ -1,4 +1,5 @@
 DEBUG = 0
+FINALRELEASE = 1
 TARGET = iphone:clang:latest:7.0
 ARCHS = arm64e armv7 arm64
 INSTALL_TARGET_PROCESSES = Uptime

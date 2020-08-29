@@ -22,13 +22,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        center()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
+        //center()
         refreshWithTimer()
     }
-        
+    
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
