@@ -21,7 +21,6 @@
 		10FCCF0D24FA166500753CF4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FCCF0B24FA166500753CF4 /* MainInterface.storyboard */; };
 		10FCCF1124FA166500753CF4 /* UptimeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 10FCCF0624FA166500753CF4 /* UptimeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		10FCCF1624FA168600753CF4 /* UptimeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B557524FA069400753CF4 /* UptimeLibrary.m */; };
-		10FCCF1824FA16BA00753CF4 /* Uptime-Bridging-Header.c in Sources */ = {isa = PBXBuildFile; fileRef = 10FCCF1724FA16BA00753CF4 /* Uptime-Bridging-Header.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +86,7 @@
 		10FCCF0924FA166500753CF4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		10FCCF0C24FA166500753CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		10FCCF0E24FA166500753CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10FCCF1724FA16BA00753CF4 /* Uptime-Bridging-Header.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Uptime-Bridging-Header.c"; sourceTree = "<group>"; };
+		10FCCF1924FA179800753CF4 /* Uptime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uptime-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +176,7 @@
 				10FCCF0924FA166500753CF4 /* TodayViewController.swift */,
 				10FCCF0B24FA166500753CF4 /* MainInterface.storyboard */,
 				10FCCF0E24FA166500753CF4 /* Info.plist */,
-				10FCCF1724FA16BA00753CF4 /* Uptime-Bridging-Header.c */,
+				10FCCF1924FA179800753CF4 /* Uptime-Bridging-Header.h */,
 			);
 			path = UptimeWidget;
 			sourceTree = "<group>";
@@ -325,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10FCCF1824FA16BA00753CF4 /* Uptime-Bridging-Header.c in Sources */,
 				10FCCF0A24FA166500753CF4 /* TodayViewController.swift in Sources */,
 				10FCCF1624FA168600753CF4 /* UptimeLibrary.m in Sources */,
 			);
@@ -403,6 +401,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -419,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -464,6 +463,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -474,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -563,6 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = us.nashi.Uptime.UptimeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UptimeWidget/Uptime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -581,6 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = us.nashi.Uptime.UptimeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UptimeWidget/Uptime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
