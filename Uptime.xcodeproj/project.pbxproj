@@ -17,8 +17,6 @@
 		106B557724FA069400753CF4 /* UptimeLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 106B557424FA069400753CF4 /* UptimeLibrary.h */; };
 		106B557B24FA06C400753CF4 /* libUptimeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106B557224FA069400753CF4 /* libUptimeLibrary.a */; };
 		10FCCF0724FA166500753CF4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099C6D624F9C3CD00753CF4 /* NotificationCenter.framework */; };
-		10FCCF0A24FA166500753CF4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FCCF0924FA166500753CF4 /* TodayViewController.swift */; };
-		10FCCF0D24FA166500753CF4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FCCF0B24FA166500753CF4 /* MainInterface.storyboard */; };
 		10FCCF1124FA166500753CF4 /* UptimeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 10FCCF0624FA166500753CF4 /* UptimeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		10FCCF1624FA168600753CF4 /* UptimeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B557524FA069400753CF4 /* UptimeLibrary.m */; };
 /* End PBXBuildFile section */
@@ -83,10 +81,6 @@
 		106B557524FA069400753CF4 /* UptimeLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UptimeLibrary.m; sourceTree = "<group>"; };
 		1099C6D624F9C3CD00753CF4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		10FCCF0624FA166500753CF4 /* UptimeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UptimeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		10FCCF0924FA166500753CF4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		10FCCF0C24FA166500753CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		10FCCF0E24FA166500753CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10FCCF1924FA179800753CF4 /* Uptime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uptime-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +115,6 @@
 			children = (
 				101F451824F898CB00753CF4 /* Uptime */,
 				106B557324FA069400753CF4 /* UptimeLibrary */,
-				10FCCF0824FA166500753CF4 /* UptimeWidget */,
 				1099C6D524F9C3CD00753CF4 /* Frameworks */,
 				101F451724F898CB00753CF4 /* Products */,
 			);
@@ -168,17 +161,6 @@
 				1099C6D624F9C3CD00753CF4 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		10FCCF0824FA166500753CF4 /* UptimeWidget */ = {
-			isa = PBXGroup;
-			children = (
-				10FCCF0924FA166500753CF4 /* TodayViewController.swift */,
-				10FCCF0B24FA166500753CF4 /* MainInterface.storyboard */,
-				10FCCF0E24FA166500753CF4 /* Info.plist */,
-				10FCCF1924FA179800753CF4 /* Uptime-Bridging-Header.h */,
-			);
-			path = UptimeWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10FCCF0D24FA166500753CF4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +305,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10FCCF0A24FA166500753CF4 /* TodayViewController.swift in Sources */,
 				10FCCF1624FA168600753CF4 /* UptimeLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,14 +334,6 @@
 				101F452524F898F400753CF4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		10FCCF0B24FA166500753CF4 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10FCCF0C24FA166500753CF4 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,7 +460,6 @@
 		101F452B24F898F400753CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,7 +481,6 @@
 		101F452C24F898F400753CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
