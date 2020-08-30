@@ -1,6 +1,6 @@
 Package: us.sudhip.uptime
 Name: Uptime
-Version: 1.0.0
+Version: 1.0.2
 Architecture: iphoneos-arm
 Description: An application to find uptime. Compatible with UNIX philosophy
 Maintainer: Sudhip Nashi
