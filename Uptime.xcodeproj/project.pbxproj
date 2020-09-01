@@ -13,7 +13,11 @@
 		101F452124F898CC00753CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101F451F24F898CC00753CF4 /* Main.storyboard */; };
 		101F452324F898F400753CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101F452224F898F400753CF4 /* Assets.xcassets */; };
 		101F452624F898F400753CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101F452424F898F400753CF4 /* LaunchScreen.storyboard */; };
-		106B557624FA069400753CF4 /* UptimeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 106B557524FA069400753CF4 /* UptimeLibrary.m */; };
+		105AE4F624FEEB7A00753CF4 /* get_days.c in Sources */ = {isa = PBXBuildFile; fileRef = 105AE4F524FEEB7A00753CF4 /* get_days.c */; };
+		105AE4F924FEEB8600753CF4 /* get_hours.c in Sources */ = {isa = PBXBuildFile; fileRef = 105AE4F824FEEB8600753CF4 /* get_hours.c */; };
+		105AE4FC24FEEBB500753CF4 /* get_minutes.c in Sources */ = {isa = PBXBuildFile; fileRef = 105AE4FB24FEEBB500753CF4 /* get_minutes.c */; };
+		105AE4FF24FEEBC900753CF4 /* get_seconds.c in Sources */ = {isa = PBXBuildFile; fileRef = 105AE4FE24FEEBC900753CF4 /* get_seconds.c */; };
+		105AE50124FEEBEF00753CF4 /* get_uptime.c in Sources */ = {isa = PBXBuildFile; fileRef = 105AE50024FEEBEF00753CF4 /* get_uptime.c */; };
 		106B557724FA069400753CF4 /* UptimeLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 106B557424FA069400753CF4 /* UptimeLibrary.h */; };
 		106B557B24FA06C400753CF4 /* libUptimeLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106B557224FA069400753CF4 /* libUptimeLibrary.a */; };
 		1071D35C24FC09AE00753CF4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099C6D624F9C3CD00753CF4 /* NotificationCenter.framework */; };
@@ -77,10 +81,15 @@
 		101F452524F898F400753CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101F452724F898F400753CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101F452D24F8993B00753CF4 /* Uptime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uptime-Bridging-Header.h"; sourceTree = "<group>"; };
+		105AE4F524FEEB7A00753CF4 /* get_days.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_days.c; sourceTree = "<group>"; };
+		105AE4F824FEEB8600753CF4 /* get_hours.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_hours.c; sourceTree = "<group>"; };
+		105AE4FB24FEEBB500753CF4 /* get_minutes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_minutes.c; sourceTree = "<group>"; };
+		105AE4FE24FEEBC900753CF4 /* get_seconds.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_seconds.c; sourceTree = "<group>"; };
+		105AE50024FEEBEF00753CF4 /* get_uptime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_uptime.c; sourceTree = "<group>"; };
+		105AE50224FEED0500753CF4 /* uptime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uptime.h; sourceTree = "<group>"; };
 		106B556724FA054200753CF4 /* libUptimeLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUptimeLibrary.a; path = UptimeLibrary/libUptimeLibrary.a; sourceTree = "<group>"; };
 		106B557224FA069400753CF4 /* libUptimeLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUptimeLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		106B557424FA069400753CF4 /* UptimeLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UptimeLibrary.h; sourceTree = "<group>"; };
-		106B557524FA069400753CF4 /* UptimeLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UptimeLibrary.m; sourceTree = "<group>"; };
 		1071D35B24FC09AE00753CF4 /* UptimeW.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UptimeW.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1071D35E24FC09AE00753CF4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		1071D36124FC09AE00753CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -156,7 +165,12 @@
 			isa = PBXGroup;
 			children = (
 				106B557424FA069400753CF4 /* UptimeLibrary.h */,
-				106B557524FA069400753CF4 /* UptimeLibrary.m */,
+				105AE4F524FEEB7A00753CF4 /* get_days.c */,
+				105AE4F824FEEB8600753CF4 /* get_hours.c */,
+				105AE4FB24FEEBB500753CF4 /* get_minutes.c */,
+				105AE4FE24FEEBC900753CF4 /* get_seconds.c */,
+				105AE50024FEEBEF00753CF4 /* get_uptime.c */,
+				105AE50224FEED0500753CF4 /* uptime.h */,
 			);
 			path = UptimeLibrary;
 			sourceTree = "<group>";
@@ -315,7 +329,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				106B557624FA069400753CF4 /* UptimeLibrary.m in Sources */,
+				105AE4FC24FEEBB500753CF4 /* get_minutes.c in Sources */,
+				105AE4F924FEEB8600753CF4 /* get_hours.c in Sources */,
+				105AE4FF24FEEBC900753CF4 /* get_seconds.c in Sources */,
+				105AE50124FEEBEF00753CF4 /* get_uptime.c in Sources */,
+				105AE4F624FEEB7A00753CF4 /* get_days.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
